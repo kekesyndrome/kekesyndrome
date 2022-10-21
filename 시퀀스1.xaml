@@ -1,0 +1,194 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="시퀀스1" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1179.2,2029.6" sap2010:WorkflowViewState.IdRef="시퀀스1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="시퀀스1" sap:VirtualizedContainerService.HintSize="794.4,1964.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="a" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: G마켓 - 쇼핑을 바꾸는 쇼핑" sap:VirtualizedContainerService.HintSize="752.8,1872" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="779e7059-36d1-40a5-bd8e-4d399b384a52" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="719.2,1655.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="677.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(f12)][u(hk)]" Version="V1" />
+            <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Cookies'" sap:VirtualizedContainerService.HintSize="677.6,470.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="779e7059-36d1-40a5-bd8e-4d399b384a52" Version="V1">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="249.6,85.6" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Cookies'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="779e7059-36d1-40a5-bd8e-4d399b384a52" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1251, 518, 17, 16" FriendlyName="'grouping'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' /&gt;&lt;ctrl role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' /&gt;&lt;ctrl role='grouping' automationid='' /&gt;" Guid="9b092119-1a73-4503-8ac4-a5a0c2fb3088" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADmSURBVDhPY5AqfvGf2ngEG6pR85K6hrr0vP5/7+UP6hkKciHIwF+/flHP0OUnPoMNxGpo784v/3t2fkYRI4TNWl7BDcRpKAgcu/Pzv3nraxQ5XLh23Qe4gfdfYQlTmKEg8PHbv/91Gz6hyGPDMK+DDAfx8RoKA9sv/wBHBLpaGD504yvYUFAwgPhEGQoCj9/9QVGHjGGGXnj4/X/X9o/EGbrjCn6Xdm37CA9TEMZr6Kfv//7XExGmQVPfEmcoKbEPwheBXsdrKAijixPCyK7FMJQSnLfsPfUNBWGQwVQ3FIRpYOiL/wCNlmbV8C+GMwAAAABJRU5ErkJggg==" InformativeScreenshot="84e9a1330f9f6582ef698451a9bfe0b5.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='G마켓 - 쇼핑을 바꾸는 쇼핑 - Chrome' /&gt;" SearchSteps="Image">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="1251, 513, 210, 26" FriendlyName="'Cookies'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' automationid='' check:text='Cookies' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANYAAAAeCAYAAABQWOD3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAN7SURBVHhe7ZrBahNRFIZ9Dp/AJ9AX8Al8Ap/ATbdVN7opdVl047biprhQazcWFFQEpcEuREQREWxrrUkb00Tp1T/kpP+c3kySSabkMv+Bj5m5985JCPfj3LmTM0GhSDRev6n1zmYvJJYi2ZBYCkUJIbEUihJipsU6O/c9CJEiEkuIEpBYQpRAJcU6f2M7zK/8Cg83muHZ+2b3OjZOiKJUSqxz81th+eV+6HQ6GRYe16PjhShKZcS6uLgTPm0dnpBKYokyqIRYqFQs1dX/y0As/2pfWv22H/W2loRialRCrHuvjpd/EMjaUamsHVxa2s3cNy7PP7R7X/04YuOKsvT0IDcnYvPbn2ifOF2SEuvW2kFYXNvPtA0DVYjlAdi4gEQbVLEYlm9UEF9//s20rbxtdeG2SRgmlpgdkhML8eJjO1y4uZPpGwSWfSbM5+34M1YMiAewjIzlZSDUaVQKiZUOSYqFqP8+CtceNDL9MWwZCMFw7UXj56wYj2rNEzmZcSa7Xyri2o+BpBzIb33+s1ANESY17vU5G62j7hiEr6j8WRjHfWIykhXLYvXdYW5VwXsqCGIbE6hCuIZUdp+NiYE+zufBRPYTNgYmv5+8CBYB/Vz5TCSTi8Wau1/vnvNS04uFfHyNfsuPI3+WF1JMRvJiIfImtkmD56mF1Xr/uQpHG8ObGxjPS8ZRxOIJGsMkwJHbIYXJxucMC8BiIbwMLBby+d+F7/cSiumSvFhPNvMrlt/5Y/Cy+PZ6o39t77OQz9ognc/JYHLmiQ0woWPSmHA4HyQoC2Ji+EpksCw4Dgr0Wy4E5xDTIVmxMLmuj/CMZUu/UbiyvNe9h8W6fDd/C35QpWHKECsmsxdrWCUFJmAsnyhOkmKNsysIYhsUWO6hQvmXxKhi9jIZY2L5PAib0DHKWArG5GKxRhHesO+H/LF+MT7JiQV8+zBiVcsqEVcnz7BqZdiE93JhcgOcQw4/0RHWD9DPVcbympAsFkDweBYr1o881u/bEV58UZykxJoELPNYGtt+x38Iud0o8v9BiMHhKwomMwdLZfgcPNm9WCaECevFAj4sH8ZyqFpNl8qIBSDXbqPdlwc7flj+sVDot2ctIYpSKbEAln6oRrylDnB9Z72Ru8MoxKhUTiwhTgOJJUQJSCwhSkBiCVECEkuIEphpsXpHhSK5mF2xQvgHX+bvcsdrOc4AAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1266, 595, 244, 26" FriendlyName="'https://www-dev.gmarket…'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='https://www-dev.gmarket.co.kr' role='outline item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='https://www-dev.gmarket.co.kr' role='outline item' automationid='' check:text='https://www-dev.gmarket.co.kr' /&gt;" Guid="6e42c49e-8bfd-4c43-85e9-f4278822e429" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAAeCAYAAAABzNOUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARNSURBVHhe7ZqxTtxAEIbzHKkSKY+ElLegiQQpaWlP6VCSBookghJKuFQoUorQUNBSREIUNLSOvtP9ZBjWeB32CHPMJ43snV2v16f9vMbmxct3v7uMjJq4urqaxXQ6fXCorx8/f3XJ4kjBM6ojBY9HCp5RHSl4PF7Mt0kySAoejxQ8qSYFj0cKnlSTgsdjYYJfXl52R0dH3dbWVjeZTGblJDYpeDyaC359fd3t7Ox0q6urt2J/f3/eIolKCh6PpoKfn593Gxsbd+ROwZeDFDwezQRn5bZyHx4ezh7LNzc3b3Lr6+v5qB6YFDwezQTf3t6+JbJg5VaeODs7m9eM49XrN93p6em89PSYTD7MwtOXf+qUxp2Cx6OJ4KzKVmKCF2zIbFdwG/YmUMOQ4BcXF7M2bEUptyj6zvNY529NCr4cNBGcx3GJ2/c3eCm4ARA83g/xlAWfTr93a2vv56W/9OUjkIIvB00E1+M5ooMXvm8VV/ApbQgJzlYh4b98/XYrT5RyoD4kv8LfPGydJjrblZW3s30LEiOzR3l7TkFfVn6N5+Onz3fOQZnrEfSpXG3bIRiPrpdxUdZ1ixQ8Hk0E5zs3ouoFGqsyZeTW6qw2paBuCE0+IYFFabUu5SSbnfRIYNtRZ4WVMCXBdQ6Pz/s+Kdt66hDLj1llezNgHIxpTNv78Nel38MKzn4KHo+mgrNSHxwc3KzYbIV9CUd7+yhfK7gVpG9yqwylXGk1BaSQCNT7Fb0PjrEiCJ9nX2X65nyEzkOdzm9vBuQIxiSo13Fj2pYo/UbA2DRetUnB49FEcP+m3Ab/9LK3t3dT1vdwVnblkH+IknQ2V5qopRztyXmsgJLEroR9+P6FzyOhVkmJqAAroh2LbgLa6prEmLbs26CedhqXxfZLG9qn4PFoIrgeyWvi+Ph4dowV/OTkZJa7DyYYE81ic5rMVqpSTpPVw2SWbAJRaOvzAmlp4+nLayzUsWUs2reSkVfZ3xToW+LBmLYl7PEWLzhtUvB4NBEcSi/SeAxnxbZ1fB5jVdcjOtsakIOJZrG5ksylHO19DpjACOEhR/sSyFk6ZihvhaJvcl5En2fcHE/Z9z2mraf0GwFjVH9qk4LHo5ngpVVcK7NdrX3UrN7ABLtPcKhpwz45BBCsdlY6TWxAENWR174mvacvDzqP7Z9xkPMilvL0S87LOKZtCY73vwfH+3Gm4PFoJjjw+G3l1Wcz/kfd5hVj/j+dCTckLxOSHCF8ToIjg/KqEzZv66zgSGAFEH150LntmCWTF1F5i0T2jGnbB23pg9A1+OtIwePRVHBAch7DJTFvyG2ZoKy/xR8bSfZQEMKKKvryy0AKHo/mggOP5KzO9lMYQXl3d/fm2/j/oIXg9rHd0pdfFlLweCxE8KdMqxX8OZKCx+PZCZ78Oyl4PFLwpJoUPB4peFJNCh6PFDypJgWPRwqeVJOCxyMFT6pJwaPRdX8Atn4WfBoPpcAAAAAASUVORK5CYII=" InformativeScreenshot="e250b9da94fb3eb587a35c741bb4884b.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='G마켓 - 쇼핑을 바꾸는 쇼핑 - Chrome' /&gt;" SearchSteps="Selector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1251, 570, 259, 26" FriendlyName="'Cookies'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' automationid='' check:text='Cookies' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAeCAYAAAAhBdtAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPkSURBVHhe7Z3PahNRFMb7HD6BT6AvoC/gE/gEbrqtuNFNscuiG7cVN8WFf3BjqYKKoLSgICKKiGD/WSdaaqM4+oWe5JuTO2mSzgwc5/vgRzJzb24Ken65ZzKlM7miNJAsy3qsrq4eG1vr+Yv1w9WVOiI5KI1EcogXyUFpJJJDvMycmP2SC1E3kkO8SA6iESSHeJEcRCNIDvFSmxxOXd7M55a/5XfW9vJHb/Z6x6l5oh1IDvFSuRxOzm3kS0+/591ut8D8vSw5X7QDySFeKpXDmatb+fuNn0NikByE5BAvlckBOwYWw8V/LQVaifWP+/1z29mB2ouWIjnES2VyuPls0EpAAnYeOwY7D84t7hReNymP3x4c/uiDpOZNy+LDHyPXRF59/pUcE+VIDvFSiRywG2ABAFyMhAjWaOfAsEDGBfn09Xfh3PLL/R587jgcJQcxHZJDvFQiB7QQVvQfNtPXHFJAHgAtSWpdBlJo4hNbcqgHySFeCnJ48m54y855XVKc1lJAEjj2suDrDinuru8NrclMUrC+7cCxnwPRcLC+jfn3wq4EMTHhtX7Nzv6f3hzE72z4vTCPx9qE5BAvBTmcvrJV+I/uc3Zhu/APbuA+BhS5XWzEbgDHEIPtCmxOCozxeh4Uoy+6FChgX4AIFzPGeQdiMjBBsBxmb2W959y2eDlgPT7GuK2PR34vL5U2ITnEy1Bbcel253ComIUHg09XjxU+ri/M38/61xnwaHP4giXmc/sxjhy4yFJYIeORz6OwTRj8nOEiZjkgvqBZDljPS4tf70XSZiSHeElec/DtRVk7YfhvJBjcEHVtpdM/tvsdsKOwcxCHX5NBgfki9KAoU4Vv0sDzMslwkVtx+x2BwQWPx7Jg3NZCeI02IjnES1IOvr0oaycMayPG4cLSbu81LIfzN0Z/vVn2ic/UIYeUkLwcjtrRAJNIar22IDnES1IOwNoLPKbGPamLjmgdsFPwN0JhN2E3TGFOaj0PYkWZoo62IiUIlsM40jLs58P6qfH/HckhXkrlAEZdZ/Ckdg+2I+BdgueoXYNhResFgQIFeI4C98WK2DjAOH/a27omFZYDQHg+yyE1jnVs3J9HvLzaguQQLyPlMCloGbjw7atN/M4Fnzem+X0LFDfHf7KjIDksBsOvwQXr5WBFbdLxcgA+th7mctq6awCSQ7xUKgcAQex0DvoCwDcRaCVYChi3aw+iHUgO8VK5HADaCOwK+OtKgOPrK53+vQ+iPUgO8VKLHITwSA7xIjmIRpAc4kVyEI0gOcSL5CAaQXKIF8lBNILkEC/6i1dKI5Ec4kVyUBqJ5BAtef4XUNRwdwl2S6gAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Cookies'" sap:VirtualizedContainerService.HintSize="677.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="779e7059-36d1-40a5-bd8e-4d399b384a52" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1266, 538, 244, 26" FriendlyName="'https://www-dev.gmarket…'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='https://www-dev.gmarket.co.kr' role='outline item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='https://www-dev.gmarket.co.kr' role='outline item' automationid='' check:text='https://www-dev.gmarket.co.kr' /&gt;" Guid="fe1d0b43-20e5-4fe4-ad88-a36e1d28f32b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAAeCAYAAAABzNOUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARNSURBVHhe7ZqxTtxAEIbzHKkSKY+ElLegiQQpaWlP6VCSBookghJKuFQoUorQUNBSREIUNLSOvtP9ZBjWeB32CHPMJ43snV2v16f9vMbmxct3v7uMjJq4urqaxXQ6fXCorx8/f3XJ4kjBM6ojBY9HCp5RHSl4PFLwjOpIwePxYr5NkkFS8Hik4Ek1KXg8UvCkmhQ8HgsT/PLysjs6Ouq2tra6yWQyKyexScHj0Vzw6+vrbmdnp1tdXb0V+/v78xZJVFLweDQV/Pz8vNvY2Lgjdwq+HKTg8WgmOCu3lfvw8HD2WL65uXmTW19fz0f1wKTg8Wgm+Pb29i2RBSu38sTZ2dm8ZhyvXr/pTk9P56Wnx2TyYRaevvxTpzTuFDweTQRnVbYSE7xgQ2a7gtuwN4EahgS/uLiYtWErSrlF0Xeexzp/a1Lw5aCJ4DyOS9y+v8FLwQ2A4PF+iKcs+HT6vVtbez8v/aUvH4EUfDloIrgezxEdvPB9q7iCT2lDSHC2Cgn/5eu3W3milAP1IfkV/uZh6zTR2a6svJ3tW5AYmT3K23MK+rLyazwfP32+cw7KXI+gT+Vq2w7BeHS9jIuyrluk4PFoIjjfuRFVL9BYlSkjt1ZntSkFdUNo8gkJLEqrdSkn2eykRwLbjjorrIQpCa5zeHze90nZ1lOHWH7MKtubAeNgTGPa3oe/Lv0eVnD2U/B4NBWclfrg4OBmxWYr7Es42ttH+VrBrSB9k1tlKOVKqykghUSg3q/ofXCMFUH4PPsq0zfnI3Qe6nR+ezMgRzAmQb2OG9O2ROk3Asam8apNCh6PJoL7N+U2+KeXvb29m7K+h7OyK4f8Q5Sks7nSRC3laE/OYwWUJHYl7MP3L3weCbVKSkQFWBHtWHQT0FbXJMa0Zd8G9bTTuCy2X9rQPgWPRxPB9UheE8fHx7NjrOAnJyez3H0wwZhoFpvTZLZSlXKarB4ms2QTiEJbnxdISxtPX15joY4tY9G+lYy8yv6mQN8SD8a0LWGPt3jBaZOCx6OJ4FB6kcZjOCu2rePzGKu6HtHZ1oAcTDSLzZVkLuVo73PABEYIDznal0DO0jFDeSsUfZPzIvo84+Z4yr7vMW09pd8IGKP6U5sUPB7NBC+t4lqZ7Wrto2b1BibYfYJDTRv2ySGAYLWz0mliA4Kojrz2Nek9fXnQeWz/jIOcF7GUp19yXsYxbUtwvP89ON6PMwWPRzPBgcdvK68+m/E/6javGPP/6Uy4IXmZkOQI4XMSHBmUV52weVtnBUcCK4Doy4PObccsmbyIylsksmdM2z5oSx+ErsFfRwoej6aCA5LzGC6JeUNuywRl/S3+2Eiyh4IQVlTRl18GUvB4NBcceCRndbafwgjKu7u7N9/G/wctBLeP7Za+/LKQgsdjIYI/ZVqt4M+RFDwez07w5N9JweORgifVpODxSMGTalLweKTgSTUpeDxS8KSaFDwaXfcHbDdBlb/ZniQAAAAASUVORK5CYII=" InformativeScreenshot="e81a7dfae2880a9ec7108f2b3870ee1f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='G마켓 - 쇼핑을 바꾸는 쇼핑 - Chrome' /&gt;" SearchSteps="Selector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1251, 513, 259, 26" FriendlyName="'Cookies'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Storage' role='grouping' /&gt;&lt;ctrl name='Cookies' role='outline item' automationid='' check:text='Cookies' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQcAAAAeCAYAAAAhBdtAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPkSURBVHhe7Z3PahNRFMb7HD6BT6AvoC/gE/gEbrqtuNFNscuiG7cVN8WFf3BjqYKKoLSgICKKiGD/WSdaaqM4+oWe5JuTO2mSzgwc5/vgRzJzb24Ken65ZzKlM7miNJAsy3qsrq4eG1vr+Yv1w9WVOiI5KI1EcogXyUFpJJJDvEgOSiORHOJl5sTsl1yIupEc4kVyEI0gOcSL5CAaQXKIl9rkcOryZj63/C2/s7aXP3qz1ztOzRPtQHKIl8rlcHJuI196+j3vdrsF5u9lyfmiHUgO8VKpHM5c3crfb/wcEoPkICSHeKlMDtgxsBgu/msp0Eqsf9zvn9vODtRetBTJIV4qk8PNZ4NWAhKw89gx2HlwbnGn8LpJefz24PBHHyQ1b1oWH/4YuSby6vOv5JgoR3KIl0rkgN0ACwDgYiREsEY7B4YFMi7Ip6+/C+eWX+734HPH4Sg5iOmQHOKlEjmghbCi/7CZvuaQAvIAaElS6zKQQhOf2JJDPUgO8VKQw5N3w1t2zuuS4rSWApLAsZcFX3dIcXd9b2hNZpKC9W0Hjv0ciIaD9W3Mvxd2JYiJCa/1a3b2//TmIH5nw++FeTzWJiSHeCnI4fSVrcJ/dJ+zC9uFf3AD9zGgyO1iI3YDOIYYbFdgc1JgjNfzoBh90aVAAfsCRLiYMc47EJOBCYLlMHsr6z3ntsXLAevxMcZtfTzye3mptAnJIV6G2opLtzuHQ8UsPBh8unqs8HF9Yf5+1r/OgEebwxcsMZ/bj3HkwEWWwgoZj3wehW3C4OcMFzHLAfEFzXLAel5a/HovkjYjOcRL8pqDby/K2gnDfyPB4Iaoayud/rHd74AdhZ2DOPyaDArMF6EHRZkqfJMGnpdJhovcitvvCAwueDyWBeO2FsJrtBHJIV6ScvDtRVk7YVgbMQ4XlnZ7r2E5nL8x+uvNsk98pg45pITk5XDUjgaYRFLrtQXJIV6ScgDWXuAxNe5JXXRE64Cdgr8RCrsJu2EKc1LreRAryhR1tBUpQbAcxpGWYT8f1k+N/+9IDvFSKgcw6jqDJ7V7sB0B7xI8R+0aDCtaLwgUKMBzFLgvVsTGAcb5097WNamwHADC81kOqXGsY+P+POLl1RYkh3gZKYdJQcvAhW9fbeJ3Lvi8Mc3vW6C4Of6THQXJYTEYfg0uWC8HK2qTjpcD8LH1MJfT1l0DkBzipVI5AAhip3PQFwC+iUArwVLAuF17EO1AcoiXyuUA0EZgV8BfVwIcX1/p9O99EO1BcoiXWuQghEdyiBfJQTSC5BAvkoNoBMkhXiQH0QiSQ7xIDqIRJId40V+8UhqJ5BAtef4X8hdwdzlMPMwAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filter'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="677.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="779e7059-36d1-40a5-bd8e-4d399b384a52" Text="jae" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1471, 308, 141, 21" ElementType="InputBox" FriendlyName="'Filter'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl idx='2' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl automationid='' role='editable text' /&gt;" Guid="3a1ed38c-a17a-4f74-90c1-02bdc48312a1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAZCAYAAAAxO8yWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEkSURBVGhD7dhBaoNQFEZh15FRCtlXBpl03kImWUAhg2ygUOgKSskSGrKFpCtwYNZg+KVXLmrT6tWB5nxwwafmjQ4qSXIgiIgQRkQIKyOaPyyKAdoiIoQREcKICGFEhLBaRMvVY23k43NfHGfZpVy/bHfFMe5bLaLn9ebnzG3ViF7f3ovB/SEihP07otP5u3y1iY/Iv/o0umYUlr/maf11ODZew3j0EpE0PYm09vfoN35/4pmGPz+sLYy2EekD3N9vdE572bGeRBi3wZ5Edn/T+IjsGOM1aES/7WWIaBoGi8heZ/a/UhMimobeIqquRevqfj40IpqG3iKyJ49G14zusfMa/yGtNRGNXy0ioC0iQhgRIYyIEFZGBHSVzJ7SnGG6T5pfATuIeMvXBs8HAAAAAElFTkSuQmCC" InformativeScreenshot="f3b0c6c25f0f2b98a56a9a0d00fdffc5.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='G마켓 - 쇼핑을 바꾸는 쇼핑 - Chrome' /&gt;" SearchSteps="Selector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1427, 301, 36, 33" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Refresh' role='push button' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAlCAYAAAAwYKuzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFySURBVFhH7ZhBT4MwGIb9xYQQwhFMSNyRP+HiEjWOk5te1NNCYiLupF50+wWL3j/3NqkppTBHS9NDD8+Bfi/jCR98JTvZff+Qy7gvWD3X5DK+xbo4LXi/3nlBLbygLtYFPzcb5XoXRgXf3j9osbyjeVnSw+MTvbyuG3XIXV5dN9YOYURwVVWUphkFQdAC65CGXJad2he8mM2UYjJxHFMURXYFbxfLP4EkSdgx2oza13ZLN/OSifFMGIb2BCHAL5xmGTuWM2ir3Prz6bSV62OwoNjaWnoZAOTyPG/IAWt38GwyYRcsiqJVg1wfcr6PwYL8juBOquqmsCYoPhKqehejtFgFcsjjPFW9i9FeEhHUefbYR2KwYGPM7EeJaszwnDhqunJdDBYE8qDGlsYHNd+Xsc4zyMu/cQgtQSC2uo9jW8vRFgTsY2G/m6jEsI666rz/YESQg7aijdiDxX1ZB6OCY+AFdfGCunhBE3hBXRz/h7WmX9/MZU9IWSHVAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'jaehuid'" sap:VirtualizedContainerService.HintSize="677.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="779e7059-36d1-40a5-bd8e-4d399b384a52" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1426, 412, 185, 26" ElementType="Cell" FriendlyName="'jaehuid'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl idx='5' role='row' /&gt;&lt;ctrl name='jaehuid' role='cell' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='jaehuid' role='cell' automationid='' /&gt;" Guid="46eb515f-2d52-4b0b-873b-a9395dbd0150" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL0AAAAeCAYAAAB5Xx9wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHRSURBVHhe7ZxBSsNAGIU9ioJHKniT4jmKl1BPUZeCC1dZirjMSux+5LV58PhJMLHMkM68Dx7J/DP5m8XXdNpFr17f3tPH51f6/jk4TrWB5zy39E4TsfROc7H0TnMZld6YmoHnxNKbJrD0pjksvWkOS2+aw9Kb5rD0pjmySt91Xbq+uU37/ctQOQ/0Qs//Mud++r4/rsHR1MlFPenPlX4Olr5+LH3A0tdPdumjqLvdw7HGRLnivIIxtyiM9t5u79Pj0/MwOoF+CInXUHIGWx8cLX29FJUeIqmAEHSzuRtGJ0EhLonzFJNgXsdLpafwusfH66Fm6eul+JNeoXTxXNHrca6C8hoKulT6OAcwpz1NfRSXnqJqUKNsY1HptRfQ2lLpsT7+khPfSKY+ikrP7QiFUsGwRrcyY2gvojVLb+ZQVPooGeoUbI5s2otoLQoO8JpT0o+tx/39dR/msikuvUoWvzRiPj7tp4QlWovCcjzVA8fYE2PtYeqjqPQQiVKxHgWD+LpGPxl4jRJrEJzX4pwhcT3fGAzv0dLXS1bpLZBZI1mlx5dKPLmNWRNZpNctijFrI+uT3pg1YulNc1h60xyW3jTHqPT6b1COU1vg+en8kH4BI34auz4QUj0AAAAASUVORK5CYII=" InformativeScreenshot="547bca824dcd6127c4a1a086a45cda0f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='G마켓 - 쇼핑을 바꾸는 쇼핑 - Chrome' /&gt;" SearchSteps="Selector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1427, 301, 36, 33" ElementType="Button" FriendlyName="'push button Refresh'" FullSelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DevTools' role='document' /&gt;&lt;ctrl name='Main toolbar Application panel' role='grouping' /&gt;&lt;ctrl name='Application panel' role='property page' /&gt;&lt;ctrl name='resources' role='grouping' /&gt;&lt;ctrl name='Refresh' role='push button' automationid='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAlCAYAAAAwYKuzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFySURBVFhH7ZhBT4MwGIb9xYQQwhFMSNyRP+HiEjWOk5te1NNCYiLupF50+wWL3j/3NqkppTBHS9NDD8+Bfi/jCR98JTvZff+Qy7gvWD3X5DK+xbo4LXi/3nlBLbygLtYFPzcb5XoXRgXf3j9osbyjeVnSw+MTvbyuG3XIXV5dN9YOYURwVVWUphkFQdAC65CGXJad2he8mM2UYjJxHFMURXYFbxfLP4EkSdgx2oza13ZLN/OSifFMGIb2BCHAL5xmGTuWM2ir3Prz6bSV62OwoNjaWnoZAOTyPG/IAWt38GwyYRcsiqJVg1wfcr6PwYL8juBOquqmsCYoPhKqehejtFgFcsjjPFW9i9FeEhHUefbYR2KwYGPM7EeJaszwnDhqunJdDBYE8qDGlsYHNd+Xsc4zyMu/cQgtQSC2uo9jW8vRFgTsY2G/m6jEsI666rz/YESQg7aijdiDxX1ZB6OCY+AFdfGCunhBE3hBXRz/h7WmX9/MZU9IWSHVAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="677.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)]d[u(hk)][d(hk)][k(f12)][u(hk)]" Version="V1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d1a53d498bcc2b6dc3e954ed19ae8b94.png" Selector="&lt;html app='chrome.exe' title='G마켓 - 쇼핑을 바꾸는 쇼핑'/&gt;" Url="https://www-dev.gmarket.co.kr/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

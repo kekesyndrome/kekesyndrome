@@ -1,0 +1,1434 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="테스트레일" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1179.2,2773.6" sap2010:WorkflowViewState.IdRef="테스트레일_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="테스트레일" sap:VirtualizedContainerService.HintSize="627.2,2708.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="name" />
+      <Variable x:TypeArguments="x:String" Name="ID" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:Int32" Name="num" />
+      <Variable x:TypeArguments="x:String" Name="Title" />
+      <Variable x:TypeArguments="x:String" Name="Status" />
+      <Variable x:TypeArguments="x:String" Name="u" />
+      <Variable x:TypeArguments="x:String" Name="dc" />
+      <Variable x:TypeArguments="x:Int32" Name="u_1" />
+      <Variable x:TypeArguments="x:String" Name="dc_c" />
+      <Variable x:TypeArguments="x:String" Name="pre" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="585.6,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: 자동화 테스트 - TestRail" sap:VirtualizedContainerService.HintSize="585.6,2516" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="552,2299.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="테스트레일-데이터추출" sap:VirtualizedContainerService.HintSize="510.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'PC Web 7'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="http://172.30.2.20/index.php?/runs/view/832&amp;group_by=cases:section_id&amp;group_order=asc" DesignTimeRectangle="120, 638, 24, 23" ElementType="Text" FriendlyName="'7'" FullSelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' class='text-secondary section-count' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' type='' /&gt;" Guid="8fb036df-c45e-4519-82c0-da1a39ca0a54" ImageBase64="" InformativeScreenshot="77dd4ae486ee0a921f7df7a2027705e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='자동화 테스트 - TestRail' /&gt;" SearchSteps="Selector">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="59, 640, 86, 19" FriendlyName="'PC Web 7'" FullSelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' type='' aaname='PC Web&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:text='PC Web&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;7' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAXCAYAAACLbliwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASISURBVGhD7ZhPa1tHFMX7FfwhrF0w2oSC0KLBK4EgARdjBF7EiNAQZ1FBEO6iNjZEZJEamhpCkAO1cQhGJAZnUSXBolURTYiCTRAVJFVrGYzVf0qb1tTEnM6ZmSePnuY9SbHjjbX4gd7MnTvSeTNn7uiD2utd9Hj/9IS28HPtbyz/8Aoz94r4JP0tYjceY+TLRxJ+Zhv7GMNYWw43PaFd3M792CRsOxjLMbZcJj2hNRu//I4rSwWrmJ3Ascxhy016QgsoEO3AJmA3MIeX2D2hBYdZyW6YyzZHQ+jSQgx9fX0uBvDRhVlkK+agHRTuphA/M6BigoMYTi6hUDVjHPKYCoiY6DyKRnvuakCOvZTZaY2NLaFkxNoRsZy7o1h/6K82wQ6DzbNbhD47PovUNU0yhlP8QWdmkZNxdSHSoIw7de5TTDTFpJDdbk7O+JWk6OuLIV122sqYi7JNkHyILSe2MIuQaAtdf6rj/DgaoVkxtDv41v4A8HYfe3uat+IZb7BmiXVgTnc10iL0VO6gkxS+ior2AKa+E8/VVVzSP9BcocXbauzonc2msaR057zsSzyoqzYnBwmk9At05hfzuOa3czRCszyzCWVy91Uda9mD58ulN0B9GzNGjA3mNudqK/TWg6Rsl9s8l5KfhxdcglbzmOPqzpSb28n6PCJiTP90Xj0/mpSCjo5xvijm1hm3g+Vxip/ESk2N2youIfHxafRT0MBpnKU9NXaMFnpkUuyoIbWjgkNILGwc7JAOYC1sE8mbZ8jXga3S95a+ZpjbnMtf6OoG5sbop0NKEC+hfXmKVEgIEVL2k7seVoLmlFWoXC5/LmcwyudgDAnDnvrHV/FS5tRCsy1yUVjYJOIRfk/xAi27youuK43726jtC9v42tLngrnNudochiSAyNW8WinvJPQustMUgT69iXRM5JSC5jHB/PRp7c+Rm2pHqJcRxRfFgxy5a2w7j8WXfHaEvohF56CuZBBn20izrfnRzcWEzJT/xd6vVVy29LlhbnMu/8PwVgbZdaMyeEehG/Zza176szrwtF0In05Lj9fngIjPTlNEO2rHOdZhilpGeoQx4lButPnTndDP8OQ1UFlvbxukrdC+h1E7j16xeLTsVwdgf3BAeq5zMKpDNIwQrcXwZyV0GKOfGS9dsyw9/WiE7so67osFt/8XvunANkhb6/AVuk3V0VwXm2jL4NjG9hdoy5DtDf91vktYfBddqZBKGcVGre5jHV1UIt0chjd++g/o0DZId4dhC6119MS4PvVFHZ3TK9JG8SbLRBFnXl5qD5Fgm8DxZ8m2aOdhGIgi/jlXchLDQfH8oVitcg7vw9D7ZbfSSXmneIHn/wjbeG7rs+Nd3ul6119o0nozjE9nPG6GBsJ2aBuNMk+yicUxChZGqmDEkkoeqQuD6iXqG+qKsxMa1nG48q6TC4sk+xv+FLaxauuzwJyeF5aTyrFfwU8yx/qn0kmm9zfpMUKBDrOyOdZLZNIT2gX9tZuLDGNtnuymJ7QFVgwsz1gL0w5M4fmZbexjjLu6sLOL/wGPtfnNsOtXlgAAAABJRU5ErkJggg==" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <uix:NGetText.Text>
+                  <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                </uix:NGetText.Text>
+              </uix:NGetText>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='ID'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Title' ReferenceIdx='2' Name='Title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Assigned To' ReferenceIdx='3' Name='Assigned To'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='4' Name='Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5' ReferenceIdx='5' Name='Column-5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='ID' attr='text' /&gt;&lt;column name='Title' attr='text' /&gt;&lt;column name='Assigned To' attr='text' /&gt;&lt;column name='Status' attr='text' /&gt;&lt;column name='Column-5' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="http://172.30.2.20/index.php?/runs/view/832&amp;group_by=cases:section_id&amp;group_order=asc" DesignTimeRectangle="59, 477, 86, 19" FriendlyName="'PC Web 7'" FullSelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='group-1964' tag='SPAN' type='' aaname='PC Web&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:text='PC Web&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;7' /&gt;" Guid="5533df3a-b473-4d84-a8c5-ba292c6de78b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAXCAYAAACLbliwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASHSURBVGhD7ZhPa1tHFMX7FfwhrF0w2oSC0KLBK4EgBRdjBF7EiNAQZ1FBEe6iNjZEZJEamhpCkAO1cQhGNAZnUSXFolURbYiCTREVJFVrGYzVf0qb1tTEnM6ZmSePnua9J8XGG2vxA72ZO3ek82bO3NFbjZf76NPOz42/sfrdC8x9Ucb72a+RuPUVxj59LOFntrGPMYy15XDTF9rF3cKPbcIGwViOseUy6Qut2frld3y4UrKK2Q0cyxy23KQvtIAC0Q5sAvYCc3iJ3RdacJyV7Ia5bHO0hK4sJTAwMOBiCO9cnke+Zg7aQ+l+BskLQyomPIzR9ApKdTPGoYiZkIiJL6JstBeuh+TYq7m9ztjECipGrB0Ry7m7ivWH/moT7DjYPLtD6IuT88jc0KQTOMcfdGEeBRnXFCINy7hz736AqbaYDPK77ckZv5YWfQMJZKtOWxULcbYJ0o+w48SW5hERbZGbT3ScHycjNCuGoINv4w8Arw9xcKB5LZ7xChuWWAfmdFcjHULPFI46SemzuGgPYeYb8Vxfx1X9A80VWr6rxo7f224bSyr3Lsm+1MOmanNykFBGv0BnfjGPa347JyM0yzObUCb3XzSxkT96vlZ5BTR3MWfE2GBuc65AoXcepmW73OaFjPw8uuQStF7EAld3rtreTjYXERNjBmeL6vnxtBR0fILzxbGwybg9rE5S/DTWGmrcTnkFqffOY5CChs7jIu2ptWO00GPTYkeNqB0VHkFqaetoh3QBa2GbSN48RbEJ7FS+tfS1w9zmXP5C17ewMEE/HVGCeAntyxNkIkKIiLKfws2oErSgrELlcvlzNYdxPocTSBn2NDi5jucypxaabbErwsKmkYzxe4oXaNlVXvRcaTzYReNQ2Mbnlj4XzG3OFXAYkhBi14tqpbyR0PvIz1IE+vQ2sgmRUwpaxBTz06e1P8duqx2hXkYcn5SPchRusO0Slp/z2RH6Cpadg7qWQ5JtY+225kcvFxMyV/0XB7/Wcc3S54a5zbn8D8M7OeQ3jcrgDYVu2c+dRenP6sDTdiF8Ois9Xp8DIj4/SxHtqB3nWIcpahXZMcaIQ7nV5k9vQj/F9y+B2mawbZBAoX0PoyCPXrN4tOxXB+BgeEh6rnMwqkM0igitxfBnJXQU4x8ZL12zKj39ZITuyToeiAV3+Be+7MI2SKB1+AodUHW018Um2jI4trX9BdoyZHvLf53vEhXfRVcqpFZFuVWr+1hHD5VIL4fhrZ/+A7q0DdLbYdhBZx09NalPfVFHF/SKtFG+zTJRxJmXl8YjpNgmcPxZsivaeRiG4kh+zJWcxmhYPL8tVqucw/sw9H7ZnXRT3il+wLN/hG08s/XZ8S7vdL3rLzTpvBkmZ3MeN0MDYTu0jVaZJ9nG8gQFiyJTMmJJrYjM5WH1EvUNdc3ZCS3rOF55182FRZL/DX8K21i39VlgTs8Ly1nl1K/gZ5lT/VPpLNP/m/QUoUDHWdkc6yUy6Qvtgv7ay0WGsTZPdtMX2gIrBpZnrIVpB6bw/Mw29jHGXV140Rf6VNjH/ypB+c0Vx90GAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='자동화 테스트 - TestRail' /&gt;" SearchSteps="FuzzySelector, Image" />
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="59, 512, 1540, 292" FriendlyName="'ID Title'" FullSelectorArgument="&lt;webctrl id='grid-1964' tag='TABLE' /&gt;" Guid="718afeb4-2161-45dd-af70-b4bdfd053aec" InformativeScreenshot="4a3e52c165de07ebc1da86e8da567abc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='자동화 테스트 - TestRail' /&gt;" SearchSteps="Selector" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="C:\Users\STA-393\Desktop\테스트레일.xlsx" />
+              <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number Of Times" sap:VirtualizedContainerService.HintSize="510.4,2096" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="[cint(name)]" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="476.8,1936.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="435.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[num+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Sequence DisplayName="엑셀시트" sap:VirtualizedContainerService.HintSize="435.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ReadCell Cell="[&quot;A&quot;+num.ToString]" DisplayName="ID" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ReadCell_1" SheetName="Sheet1" WorkbookPath="C:\Users\STA-393\Desktop\테스트레일.xlsx">
+                        <ui:ReadCell.Result>
+                          <OutArgument x:TypeArguments="x:String">[ID]</OutArgument>
+                        </ui:ReadCell.Result>
+                      </ui:ReadCell>
+                      <ui:ReadCell Cell="[&quot;B&quot;+num.ToString]" DisplayName="Title" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ReadCell_2" SheetName="Sheet1" WorkbookPath="C:\Users\STA-393\Desktop\테스트레일.xlsx">
+                        <ui:ReadCell.Result>
+                          <OutArgument x:TypeArguments="x:String">[Title]</OutArgument>
+                        </ui:ReadCell.Result>
+                      </ui:ReadCell>
+                      <ui:ReadCell Cell="[&quot;D&quot;+num.ToString]" DisplayName="Status" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ReadCell_3" SheetName="Sheet1" WorkbookPath="C:\Users\STA-393\Desktop\테스트레일.xlsx">
+                        <ui:ReadCell.Result>
+                          <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
+                        </ui:ReadCell.Result>
+                      </ui:ReadCell>
+                    </Sequence>
+                    <Flowchart DisplayName="회원구분, 쿠폰/카드사/판매자할인/Item할인 구분" sap:VirtualizedContainerService.HintSize="435.2,52.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <av:Point x:Key="ShapeLocation">410,2.5</av:Point>
+                          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">440,77.7 440,100</av:PointCollection>
+                          <x:Double x:Key="Width">2361.6</x:Double>
+                          <x:Double x:Key="Height">1517.6000000000001</x:Double>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Flowchart.StartNode>
+                        <x:Reference>__ReferenceID29</x:Reference>
+                      </Flowchart.StartNode>
+                      <FlowStep x:Name="__ReferenceID29">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">308.4,100</av:Point>
+                            <av:Size x:Key="ShapeSize">263.2,60</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">440,160 440,186.4</av:PointCollection>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="회원 구분" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[u]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Title.Split("-"c)(0)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <FlowStep.Next>
+                          <FlowDecision x:Name="__ReferenceID1" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="80.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                            <FlowDecision.Condition>
+                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="u.Contains(&quot;일반&quot;)" />
+                            </FlowDecision.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <av:Point x:Key="ShapeLocation">399.6,186.4</av:Point>
+                                <av:Size x:Key="ShapeSize">80.8,87.2</av:Size>
+                                <av:PointCollection x:Key="TrueConnector">399.6,230 261.6,230 261.6,310</av:PointCollection>
+                                <av:PointCollection x:Key="FalseConnector">480.4,230 660.396666666667,230 660.396666666667,310</av:PointCollection>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <FlowDecision.True>
+                              <FlowStep x:Name="__ReferenceID2">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">130,310</av:Point>
+                                    <av:Size x:Key="ShapeSize">263.2,60</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">261.6,370 261.6,430 318.796666666667,430</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[u_1]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <FlowStep.Next>
+                                  <FlowStep x:Name="__ReferenceID0">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">318.796666666667,400</av:Point>
+                                        <av:Size x:Key="ShapeSize">263.2,60</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">450.396666666667,460 450.396666666667,490 384.8,490 384.8,616.4</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="할인 구분" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[dc]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[Title.Split("["c)(1).Split("]"c)(0)]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                    <FlowStep.Next>
+                                      <FlowDecision x:Name="__ReferenceID5" DisplayName="쿠폰구분" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                                        <FlowDecision.Condition>
+                                          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;바이어&quot;)" />
+                                        </FlowDecision.Condition>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <av:Point x:Key="ShapeLocation">349.6,616.4</av:Point>
+                                            <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                            <av:PointCollection x:Key="TrueConnector">349.6,660 184.8,660 184.8,736.4</av:PointCollection>
+                                            <av:PointCollection x:Key="FalseConnector">420,660 614.8,660 614.8,736.4</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <FlowDecision.True>
+                                          <FlowDecision x:Name="__ReferenceID6" DisplayName="바이어" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+                                            <FlowDecision.Condition>
+                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;원&quot;)" />
+                                            </FlowDecision.Condition>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <av:Point x:Key="ShapeLocation">149.6,736.4</av:Point>
+                                                <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                <av:PointCollection x:Key="TrueConnector">149.6,780 100,780 100,833.6</av:PointCollection>
+                                                <av:PointCollection x:Key="FalseConnector">220,780 310,780 310,833.6</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <FlowDecision.True>
+                                              <FlowStep x:Name="__ReferenceID7">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">0,833.6</av:Point>
+                                                    <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <TryCatch DisplayName="바이어쿠폰-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <TryCatch.Try>
+                                                    <Assign DisplayName="바이어쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                      </Assign.Value>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Assign>
+                                                  </TryCatch.Try>
+                                                  <TryCatch.Catches>
+                                                    <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                        </ActivityAction.Argument>
+                                                        <Assign DisplayName="바이어쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                          </Assign.Value>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Assign>
+                                                      </ActivityAction>
+                                                    </Catch>
+                                                  </TryCatch.Catches>
+                                                </TryCatch>
+                                              </FlowStep>
+                                            </FlowDecision.True>
+                                            <FlowDecision.False>
+                                              <FlowStep x:Name="__ReferenceID8">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <av:Point x:Key="ShapeLocation">210,833.6</av:Point>
+                                                    <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <TryCatch DisplayName="바이어쿠폰-정율" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <TryCatch.Try>
+                                                    <Assign DisplayName="바이어쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                      </Assign.Value>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Assign>
+                                                  </TryCatch.Try>
+                                                  <TryCatch.Catches>
+                                                    <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                        </ActivityAction.Argument>
+                                                        <Assign DisplayName="바이어쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                          </Assign.Value>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Assign>
+                                                      </ActivityAction>
+                                                    </Catch>
+                                                  </TryCatch.Catches>
+                                                </TryCatch>
+                                              </FlowStep>
+                                            </FlowDecision.False>
+                                          </FlowDecision>
+                                        </FlowDecision.True>
+                                        <FlowDecision.False>
+                                          <FlowDecision x:Name="__ReferenceID4" DisplayName="펀딩/마케팅" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+                                            <FlowDecision.Condition>
+                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;펀&quot;)" />
+                                            </FlowDecision.Condition>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <av:Point x:Key="ShapeLocation">579.6,736.4</av:Point>
+                                                <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                <av:PointCollection x:Key="TrueConnector">579.6,780 500,780 500,806.4</av:PointCollection>
+                                                <av:PointCollection x:Key="FalseConnector">650,780 960,780 960,796.4</av:PointCollection>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <FlowDecision.True>
+                                              <FlowDecision x:Name="__ReferenceID9" Condition="[dc.Contains(&quot;원&quot;)]" DisplayName="펀딩" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <av:Point x:Key="ShapeLocation">464.8,806.4</av:Point>
+                                                    <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                    <av:PointCollection x:Key="TrueConnector">464.8,850 420,850 420,913.6</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">535.2,850 630,850 630,913.6</av:PointCollection>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <FlowDecision.True>
+                                                  <FlowStep x:Name="__ReferenceID10">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:Point x:Key="ShapeLocation">320,913.6</av:Point>
+                                                        <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <TryCatch DisplayName="펀딩쿠폰-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <TryCatch.Try>
+                                                        <Assign DisplayName="펀딩쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                          </Assign.Value>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Assign>
+                                                      </TryCatch.Try>
+                                                      <TryCatch.Catches>
+                                                        <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                            </ActivityAction.Argument>
+                                                            <Assign DisplayName="펀딩쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                              </Assign.Value>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Assign>
+                                                          </ActivityAction>
+                                                        </Catch>
+                                                      </TryCatch.Catches>
+                                                    </TryCatch>
+                                                  </FlowStep>
+                                                </FlowDecision.True>
+                                                <FlowDecision.False>
+                                                  <FlowStep x:Name="__ReferenceID11">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <av:Point x:Key="ShapeLocation">530,913.6</av:Point>
+                                                        <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <TryCatch DisplayName="펀딩쿠폰-정율" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <TryCatch.Try>
+                                                        <Assign DisplayName="펀딩쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                          </Assign.Value>
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                        </Assign>
+                                                      </TryCatch.Try>
+                                                      <TryCatch.Catches>
+                                                        <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                            </ActivityAction.Argument>
+                                                            <Assign DisplayName="펀딩쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                              </Assign.Value>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Assign>
+                                                          </ActivityAction>
+                                                        </Catch>
+                                                      </TryCatch.Catches>
+                                                    </TryCatch>
+                                                  </FlowStep>
+                                                </FlowDecision.False>
+                                              </FlowDecision>
+                                            </FlowDecision.True>
+                                            <FlowDecision.False>
+                                              <FlowDecision x:Name="__ReferenceID15" DisplayName="예외" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_9">
+                                                <FlowDecision.Condition>
+                                                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;마케&quot;)" />
+                                                </FlowDecision.Condition>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <av:Point x:Key="ShapeLocation">924.8,796.4</av:Point>
+                                                    <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                    <av:PointCollection x:Key="TrueConnector">924.8,840 850,840 850,936.4</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">995.2,840 1240,840 1240,946.4</av:PointCollection>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <FlowDecision.True>
+                                                  <FlowDecision x:Name="__ReferenceID13" Condition="[dc.Contains(&quot;원&quot;)]" DisplayName="마케팅" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <av:Point x:Key="ShapeLocation">814.8,936.4</av:Point>
+                                                        <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                        <av:PointCollection x:Key="TrueConnector">814.8,980 740,980 740,1053.6</av:PointCollection>
+                                                        <av:PointCollection x:Key="FalseConnector">885.2,980 980,980 980,1053.6</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <FlowDecision.True>
+                                                      <FlowStep x:Name="__ReferenceID12">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">640,1053.6</av:Point>
+                                                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <TryCatch DisplayName="마케팅쿠폰-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <TryCatch.Try>
+                                                            <Assign DisplayName="마케팅쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                              </Assign.Value>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Assign>
+                                                          </TryCatch.Try>
+                                                          <TryCatch.Catches>
+                                                            <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                <ActivityAction.Argument>
+                                                                  <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                </ActivityAction.Argument>
+                                                                <Assign DisplayName="마케팅쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </ActivityAction>
+                                                            </Catch>
+                                                          </TryCatch.Catches>
+                                                        </TryCatch>
+                                                      </FlowStep>
+                                                    </FlowDecision.True>
+                                                    <FlowDecision.False>
+                                                      <FlowStep x:Name="__ReferenceID14">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <av:Point x:Key="ShapeLocation">880,1053.6</av:Point>
+                                                            <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <TryCatch DisplayName="마케팅쿠폰-정율" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <TryCatch.Try>
+                                                            <Assign DisplayName="마케팅쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                                              <Assign.To>
+                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                              </Assign.To>
+                                                              <Assign.Value>
+                                                                <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                              </Assign.Value>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Assign>
+                                                          </TryCatch.Try>
+                                                          <TryCatch.Catches>
+                                                            <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                <ActivityAction.Argument>
+                                                                  <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                </ActivityAction.Argument>
+                                                                <Assign DisplayName="마케팅쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </ActivityAction>
+                                                            </Catch>
+                                                          </TryCatch.Catches>
+                                                        </TryCatch>
+                                                      </FlowStep>
+                                                    </FlowDecision.False>
+                                                  </FlowDecision>
+                                                </FlowDecision.True>
+                                                <FlowDecision.False>
+                                                  <FlowDecision x:Name="__ReferenceID16" DisplayName="예외" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_11">
+                                                    <FlowDecision.Condition>
+                                                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;카드&quot;)" />
+                                                    </FlowDecision.Condition>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <av:Point x:Key="ShapeLocation">1204.8,946.4</av:Point>
+                                                        <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                        <av:PointCollection x:Key="TrueConnector">1204.8,990 1160,990 1160,1136.4</av:PointCollection>
+                                                        <av:PointCollection x:Key="FalseConnector">1275.2,990 1650,990 1650,1066.4</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <FlowDecision.True>
+                                                      <FlowDecision x:Name="__ReferenceID18" Condition="[dc.Contains(&quot;원&quot;)]" DisplayName="카드" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_13">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <av:Point x:Key="ShapeLocation">1124.8,1136.4</av:Point>
+                                                            <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                            <av:PointCollection x:Key="TrueConnector">1124.8,1180 1000,1180 1000,1213.6</av:PointCollection>
+                                                            <av:PointCollection x:Key="FalseConnector">1195.2,1180 1320,1180 1320,1213.6</av:PointCollection>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <FlowDecision.True>
+                                                          <FlowStep x:Name="__ReferenceID19">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <av:Point x:Key="ShapeLocation">900,1213.6</av:Point>
+                                                                <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <TryCatch DisplayName="카드사-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <TryCatch.Try>
+                                                                <Assign DisplayName="카드사_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </TryCatch.Try>
+                                                              <TryCatch.Catches>
+                                                                <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                    <ActivityAction.Argument>
+                                                                      <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                    </ActivityAction.Argument>
+                                                                    <Assign DisplayName="카드사쿠폰_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                                      </Assign.Value>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                    </Assign>
+                                                                  </ActivityAction>
+                                                                </Catch>
+                                                              </TryCatch.Catches>
+                                                            </TryCatch>
+                                                          </FlowStep>
+                                                        </FlowDecision.True>
+                                                        <FlowDecision.False>
+                                                          <FlowStep x:Name="__ReferenceID20">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <av:Point x:Key="ShapeLocation">1220,1213.6</av:Point>
+                                                                <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <TryCatch DisplayName="카드사-정율" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <TryCatch.Try>
+                                                                <Assign DisplayName="카드사_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </TryCatch.Try>
+                                                              <TryCatch.Catches>
+                                                                <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                    <ActivityAction.Argument>
+                                                                      <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                    </ActivityAction.Argument>
+                                                                    <Assign DisplayName="카드사쿠폰_정율" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                                      </Assign.Value>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                    </Assign>
+                                                                  </ActivityAction>
+                                                                </Catch>
+                                                              </TryCatch.Catches>
+                                                            </TryCatch>
+                                                          </FlowStep>
+                                                        </FlowDecision.False>
+                                                      </FlowDecision>
+                                                    </FlowDecision.True>
+                                                    <FlowDecision.False>
+                                                      <FlowDecision x:Name="__ReferenceID17" DisplayName="예외" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_12">
+                                                        <FlowDecision.Condition>
+                                                          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;판매자&quot;)" />
+                                                        </FlowDecision.Condition>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <av:Point x:Key="ShapeLocation">1614.8,1066.4</av:Point>
+                                                            <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                            <av:PointCollection x:Key="TrueConnector">1614.8,1110 1540,1110 1540,1256.4</av:PointCollection>
+                                                            <av:PointCollection x:Key="FalseConnector">1685.2,1110 1950,1110 1950,1166.4</av:PointCollection>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <FlowDecision.True>
+                                                          <FlowDecision x:Name="__ReferenceID22" Condition="[dc.Contains(&quot;원&quot;)]" DisplayName="판매자" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_14">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                <av:Point x:Key="ShapeLocation">1504.8,1256.4</av:Point>
+                                                                <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                                <av:PointCollection x:Key="TrueConnector">1504.8,1300 1390,1300 1390,1373.6</av:PointCollection>
+                                                                <av:PointCollection x:Key="FalseConnector">1575.2,1300 1680,1300 1680,1373.6</av:PointCollection>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <FlowDecision.True>
+                                                              <FlowStep x:Name="__ReferenceID21">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <av:Point x:Key="ShapeLocation">1290,1373.6</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <TryCatch DisplayName="판매자-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <TryCatch.Try>
+                                                                    <Assign DisplayName="판매자_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                                      </Assign.Value>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                    </Assign>
+                                                                  </TryCatch.Try>
+                                                                  <TryCatch.Catches>
+                                                                    <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                        <ActivityAction.Argument>
+                                                                          <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                        </ActivityAction.Argument>
+                                                                        <Assign DisplayName="판매자_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                                          </Assign.Value>
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                        </Assign>
+                                                                      </ActivityAction>
+                                                                    </Catch>
+                                                                  </TryCatch.Catches>
+                                                                </TryCatch>
+                                                              </FlowStep>
+                                                            </FlowDecision.True>
+                                                            <FlowDecision.False>
+                                                              <FlowStep x:Name="__ReferenceID23">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <av:Point x:Key="ShapeLocation">1580,1373.6</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <TryCatch DisplayName="판매자-정율" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <TryCatch.Try>
+                                                                    <Assign DisplayName="판매자_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                                                      <Assign.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                      </Assign.To>
+                                                                      <Assign.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                                      </Assign.Value>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                    </Assign>
+                                                                  </TryCatch.Try>
+                                                                  <TryCatch.Catches>
+                                                                    <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_11">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                        <ActivityAction.Argument>
+                                                                          <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                        </ActivityAction.Argument>
+                                                                        <Assign DisplayName="판매자_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_32">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                                          </Assign.Value>
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                        </Assign>
+                                                                      </ActivityAction>
+                                                                    </Catch>
+                                                                  </TryCatch.Catches>
+                                                                </TryCatch>
+                                                              </FlowStep>
+                                                            </FlowDecision.False>
+                                                          </FlowDecision>
+                                                        </FlowDecision.True>
+                                                        <FlowDecision.False>
+                                                          <FlowDecision x:Name="__ReferenceID25" DisplayName="예외" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_15">
+                                                            <FlowDecision.Condition>
+                                                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dc.Contains(&quot;tem&quot;)" />
+                                                            </FlowDecision.Condition>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                <av:Point x:Key="ShapeLocation">1914.8,1166.4</av:Point>
+                                                                <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                                <av:PointCollection x:Key="TrueConnector">1914.8,1210 1860,1210 1860,1286.4</av:PointCollection>
+                                                                <av:PointCollection x:Key="FalseConnector">1985.2,1210 2098.4,1210</av:PointCollection>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <FlowDecision.True>
+                                                              <FlowDecision x:Name="__ReferenceID26" Condition="[dc.Contains(&quot;원&quot;)]" DisplayName="Item" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_16">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <av:Point x:Key="ShapeLocation">1824.8,1286.4</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                                                                    <av:PointCollection x:Key="TrueConnector">1824.8,1330 1810,1330 1810,1443.6</av:PointCollection>
+                                                                    <av:PointCollection x:Key="FalseConnector">1895.2,1330 2030,1330 2030,1443.6</av:PointCollection>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <FlowDecision.True>
+                                                                  <FlowStep x:Name="__ReferenceID27">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <av:Point x:Key="ShapeLocation">1710,1443.6</av:Point>
+                                                                        <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <TryCatch DisplayName="Item-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <TryCatch.Try>
+                                                                        <Assign DisplayName="Item_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("원"c)(0)]</InArgument>
+                                                                          </Assign.Value>
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                        </Assign>
+                                                                      </TryCatch.Try>
+                                                                      <TryCatch.Catches>
+                                                                        <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                            <ActivityAction.Argument>
+                                                                              <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                            </ActivityAction.Argument>
+                                                                            <Assign DisplayName="Item_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                                                              <Assign.To>
+                                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                              </Assign.To>
+                                                                              <Assign.Value>
+                                                                                <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("원"c)(0)]</InArgument>
+                                                                              </Assign.Value>
+                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                </scg:Dictionary>
+                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                            </Assign>
+                                                                          </ActivityAction>
+                                                                        </Catch>
+                                                                      </TryCatch.Catches>
+                                                                    </TryCatch>
+                                                                  </FlowStep>
+                                                                </FlowDecision.True>
+                                                                <FlowDecision.False>
+                                                                  <FlowStep x:Name="__ReferenceID28">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <av:Point x:Key="ShapeLocation">1930,1443.6</av:Point>
+                                                                        <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <TryCatch DisplayName="Item-정액" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <TryCatch.Try>
+                                                                        <Assign DisplayName="Item_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                                                          <Assign.To>
+                                                                            <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                          </Assign.To>
+                                                                          <Assign.Value>
+                                                                            <InArgument x:TypeArguments="x:String">[Title.Split("_"c)(1).Split("%"c)(0)]</InArgument>
+                                                                          </Assign.Value>
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                        </Assign>
+                                                                      </TryCatch.Try>
+                                                                      <TryCatch.Catches>
+                                                                        <Catch x:TypeArguments="s:IndexOutOfRangeException" sap:VirtualizedContainerService.HintSize="400,130.4" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <ActivityAction x:TypeArguments="s:IndexOutOfRangeException">
+                                                                            <ActivityAction.Argument>
+                                                                              <DelegateInArgument x:TypeArguments="s:IndexOutOfRangeException" Name="exception" />
+                                                                            </ActivityAction.Argument>
+                                                                            <Assign DisplayName="Item_정액" sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_39">
+                                                                              <Assign.To>
+                                                                                <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                              </Assign.To>
+                                                                              <Assign.Value>
+                                                                                <InArgument x:TypeArguments="x:String">[Title.Split(")"c)(1).Split("%"c)(0)]</InArgument>
+                                                                              </Assign.Value>
+                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                </scg:Dictionary>
+                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                            </Assign>
+                                                                          </ActivityAction>
+                                                                        </Catch>
+                                                                      </TryCatch.Catches>
+                                                                    </TryCatch>
+                                                                  </FlowStep>
+                                                                </FlowDecision.False>
+                                                              </FlowDecision>
+                                                            </FlowDecision.True>
+                                                            <FlowDecision.False>
+                                                              <FlowStep x:Name="__ReferenceID24">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <av:Point x:Key="ShapeLocation">2098.4,1180</av:Point>
+                                                                    <av:Size x:Key="ShapeSize">263.2,60</av:Size>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[dc_c]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">0</InArgument>
+                                                                  </Assign.Value>
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                </Assign>
+                                                              </FlowStep>
+                                                            </FlowDecision.False>
+                                                          </FlowDecision>
+                                                        </FlowDecision.False>
+                                                      </FlowDecision>
+                                                    </FlowDecision.False>
+                                                  </FlowDecision>
+                                                </FlowDecision.False>
+                                              </FlowDecision>
+                                            </FlowDecision.False>
+                                          </FlowDecision>
+                                        </FlowDecision.False>
+                                      </FlowDecision>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowDecision.True>
+                            <FlowDecision.False>
+                              <FlowStep x:Name="__ReferenceID3">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">528.796666666667,310</av:Point>
+                                    <av:Size x:Key="ShapeSize">263.2,60</av:Size>
+                                    <av:PointCollection x:Key="ConnectorLocation">660.396666666667,370 660.396666666667,430 581.996666666667,430</av:PointCollection>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[u_1]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <FlowStep.Next>
+                                  <x:Reference>__ReferenceID0</x:Reference>
+                                </FlowStep.Next>
+                              </FlowStep>
+                            </FlowDecision.False>
+                          </FlowDecision>
+                        </FlowStep.Next>
+                      </FlowStep>
+                      <x:Reference>__ReferenceID1</x:Reference>
+                      <x:Reference>__ReferenceID2</x:Reference>
+                      <x:Reference>__ReferenceID3</x:Reference>
+                      <x:Reference>__ReferenceID0</x:Reference>
+                      <x:Reference>__ReferenceID4</x:Reference>
+                      <x:Reference>__ReferenceID5</x:Reference>
+                      <x:Reference>__ReferenceID6</x:Reference>
+                      <x:Reference>__ReferenceID7</x:Reference>
+                      <x:Reference>__ReferenceID8</x:Reference>
+                      <x:Reference>__ReferenceID9</x:Reference>
+                      <x:Reference>__ReferenceID10</x:Reference>
+                      <x:Reference>__ReferenceID11</x:Reference>
+                      <x:Reference>__ReferenceID12</x:Reference>
+                      <x:Reference>__ReferenceID13</x:Reference>
+                      <x:Reference>__ReferenceID14</x:Reference>
+                      <x:Reference>__ReferenceID15</x:Reference>
+                      <x:Reference>__ReferenceID16</x:Reference>
+                      <x:Reference>__ReferenceID17</x:Reference>
+                      <x:Reference>__ReferenceID18</x:Reference>
+                      <x:Reference>__ReferenceID19</x:Reference>
+                      <x:Reference>__ReferenceID20</x:Reference>
+                      <x:Reference>__ReferenceID21</x:Reference>
+                      <x:Reference>__ReferenceID22</x:Reference>
+                      <x:Reference>__ReferenceID23</x:Reference>
+                      <x:Reference>__ReferenceID24</x:Reference>
+                      <x:Reference>__ReferenceID25</x:Reference>
+                      <x:Reference>__ReferenceID26</x:Reference>
+                      <x:Reference>__ReferenceID27</x:Reference>
+                      <x:Reference>__ReferenceID28</x:Reference>
+                    </Flowchart>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="435.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[u+dc_c]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,231.2" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="304.8,152.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_40">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[num+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,224" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="241.6,145.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ClickType="Single" DisplayName="Click '일반회원 -'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="http://172.30.2.20/index.php?/runs/view/832&amp;group_by=cases:section_id&amp;group_order=asc" DesignTimeRectangle="169, 630, 661, 19" ElementType="Text" FriendlyName="'일반회원 -'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='A' tableCol='2' tableRow='{0}' /&gt;&quot;, num)]" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;일반회원 - [할인X펀딩쿠폰_7400원], 일반결제 -신용/체크카드 결제 &amp;gt; 주문완료 시 체결현황 확인&amp;#x9;*' parentid='row-772878' tag='A' type='' check:text='일반회원 - [할인X펀딩쿠폰_7400원], 일반결제 -신용/체크카드 결제 &amp;gt; 주문완료 시 체결현황 확인' /&gt;" Guid="2db6c5a9-1eba-4797-b0c4-3d390ae2e262" ImageBase64="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" InformativeScreenshot="52ad823f9795bdee1468fe81e4d58bda.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='자동화 테스트 - TestRail' /&gt;" SearchSteps="Selector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="169, 595, 1123, 17" ElementType="Text" FriendlyName="'Title'" FullSelectorArgument="&lt;webctrl aaname='Title' parentid='grid-1964' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title' parentid='grid-1964' tag='SPAN' type='' check:text='Title' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABGcAAAAVCAYAAADrcoOxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHbSURBVHhe7d2/a9RgHMBh/6RMDoUuDq6hi+AsDuEQpCC4S6VDQHAsONwiHEi5xa3TdcrUQbjJQS6DtEuHYovD8fWuPY/kGqH16GXIMzwQ3h/5Az7kffPo1+9pAAAAANAOcQYAAACgReIMAAAAQIvEGQAAAIAWiTMAAAAALRJnAAAAAFokzgAAAAC0aBlnyi+9SJLkH3oxKGfrxv14trUTn8b1l9xS5JHkJ81zAAAAACw1fzkzjyvZYZSr4+XXePP8bQznoeZ67CyGr5LYLypr5sQZAAAAgDu5X5y55SwGmTgDAAAA8L/uGWdOYj/Jo1g8f9iqH39aRprVOHM5iaO8F0+u129H+vogRj8XcwAAAAAdtkacmbvLlzNXMdrbjmzwPc4vb+bLo/eRpv0YV/cAAAAAdNDDx5mLUbyb7RktwsyNSQxevIzBj+oYAAAAQPc8fJwpDyOrHH1qPAYFAAAA0FEbijPVPQAAAAD8tYE7Z+YXB+/G8HRlTe2YEwAAAEA3rRlnplHkSWSfJ5U1M7U4cxXFx51I90ZRLoLM6XEeaXoQxUVlDwAAAEAHrR1nzr/1I3v6uH6HTC3OzPiVNgAAAECj5jgDAAAAwEaIMwAAAAAtEmcAAAAAWjONP/rKR2oh+YFyAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,231.2" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="304.8,152.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_41">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[num]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[num-1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,328.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="375.2,250.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Preconditions'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="http://172.30.2.20/index.php?/tests/view/772878&amp;group_by=cases:section_id&amp;group_order=asc&amp;group_id=1964" DesignTimeRectangle="48, 549, 1550, 146" FriendlyName="'Test 환경'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='content-inner' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-inner' tag='DIV' aaname='   ' /&gt;" Guid="220851aa-5273-4c17-bffa-f42d022f25aa" ImageBase64="" InformativeScreenshot="910a33327bd0953023940006c9208954.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='일반회원 - [할인X펀딩쿠폰_7400원], 일반결제 -신용/체크카드 결제 &amp;gt; 주문완료 시 체결현황 확인 - TestRail' /&gt;" SearchSteps="Selector">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target DesignTimeRectangle="26, 511, 115, 20" ElementType="Text" FriendlyName="'Preconditions'" FullSelectorArgument="&lt;webctrl parentid='content-inner' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content-inner' tag='SPAN' type='' aaname='Preconditions' check:text='Preconditions' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAYCAYAAADAm2IFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAROSURBVGhD7ZjfSyJRFMf3T/LFQBBigyB6GHqQwpCFIAwqIlqQWNAghgX3IYRAg40CIxKDQDY2CoREKFhdllrYGDCDYCAUBJ96PHt/ztw7jjmWDznMwxea650z957PvedHHxrtZ/DkTnlwXSwProvlwXWxPLgulgfXxfLgulgeXBdLgKtDdsEHPp9VQQjH9uD8QX5xaPVQgCje10IeNDKmQ241CL7RVcjVLHMt0q8zEAqMQGi7ArrN7+9NNnBH4GNoGkIzTOMjFLKSglJTfnkoVctb4N5BWsH7noL0Hz6vAt8CeCwJJeHd+o84+NG7/i9nUBfG36ts4C5CVjrBbTj/OkkArxWawviQqgMuUqsNdengVkDFcyxwsXS9LT2/ZzmAizb0M07gRo909GxuPFtQITyK/g7E4VSnc7ViBpYVFObwnNEpWN4ug9aS7TVqZUitTEGQ2AmCspLpCPva5R6szXa3ox0tkt/mtvKQWhqjN2o8AomTe8lO40H41ij6PZ2EOfy3EJb5vnN4DRy+JAa5nCTP/q2K9I1eay0lqZ3173lIsHlBZRXS1+JlaUP1JCn7LlmA6pNpp1+94uZyuFgIDA7dsQJxlHa8SJyMFyaGdCUp5Kgaynkk5LHwH6JgfAHkXPbdeiHGxsYkO/7PZjjkcLGCimDHNwlqmd2uJgqvJORi8OIcJBu4ZN8PZ7A+Ixw8/P35A6jiuQyuD+2H+sbZWjlcY88coOBrww73HZsj2ulXr8i5HC5y4qUYom4gNYHGAyqc8tPWumc2Y3DCbvZVmh6U6KF5w24PKaiJ9I1pxxeB3b9WO5OQ+k3HOFz/RtE4ONX9CB1jNws7jDwv5eGW3SQ+pytcMtYlLHfAdbZWDje8f8fea8PpBvVr9BhHQz5n2rRjrCtu+K5f2cC1CJ3IcOwASsYHumycV6H8BDMpOGyjcbWM59k5EunpHqr/mjTvcTtzCIhgn8OkqaHzmcji/NIWdWDiQjiEWr5rWO4brsO1crjUB/Zz+M0NzqN0V7wD7Q3Fa/y4QuQo58rqsnHbXGXqRbh2dsSCB+uSOrYvuDZO7bT/BrgO1+oELs+5UR4pB9CCDg5uswgJPG45xbJQT7lk8w1crT6y2zXAm8tTwDDcXFG6dgO5nRjqqdF7b2hBBwe3fQ+7s3g8IvSLKJ8eq6BemBvonXNNO515zMxJTuDqFyp5tsvLTuGei5W+Fa7DtfaGi/+RYrGDbGfn8FgvHt01QLjImWjzCvmNVZm8OhVP3+MZrPWolg07lgo0uFk2IDmB22ihgodVy3JFjfQiXB5h2HubRVqxdsB1tlYnN9foNLgdXlErGbiytpIOZQuX9HvCJFnd4WKRnu8TB4aKsY08XFmrPbH35H2u5UA57XMluNcp+l3B+R197g7Ka/hvG7jivvVfe2bPyecyuK/tcyW4CKa8fkufi303uJzryW3y4LpYHlwXy4PrWj3DfwOSuAU41yI5AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <uix:NGetText.Text>
+                              <OutArgument x:TypeArguments="x:String">[pre]</OutArgument>
+                            </uix:NGetText.Text>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,240" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="241.6,161.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="테스트레일-데이터추출" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" MaximumResults="0" ScopeIdentifier="51e0898f-5491-40d3-9bdb-2b21a0055711" Version="V1">
+                              <uix:NExtractData.NextLink>
+                                <uix:TargetAnchorable BrowserURL="http://172.30.2.20/index.php?/tests/view/772878&amp;group_by=cases:section_id&amp;group_order=asc&amp;group_id=1964" DesignTimeRectangle="26, 352, 54, 20" ElementType="Text" FriendlyName="'Steps'" FullSelectorArgument="&lt;webctrl aaname='Steps' parentid='content-inner' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Steps' parentid='content-inner' tag='SPAN' type='' check:text='Steps' /&gt;" Guid="f8347ba5-19b1-4b42-8599-09a3d74e4d73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAYCAYAAACr3+4VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMLSURBVFhH7VZBSxtBFO5PyiUBQRAFwdPiISgpUhBCClGKKORmvOxlLyIUoodgIaVEFAJCqSgEGgLxoFBiobJgFAoLYiCQU45f39uZ2ZnVFbqlTVFz+GAzee/tfPO+782+uusP8BIwIvrcMCL63DAi+tzwQon2umjVHCxb40gkEoRxWFkb5VMvlPQUYRDto7E5KwhOzCI9P4d0egpJn3AKuWonSHIP8n5crvp0DkAT7TVhM6kZB8e3RtCPj8jx+piDRk+sudWnTNQ7wioTWtzHhRFw1/ewt8RdzWPvZoCGw89hmITd+raWPilj+X0TrjwgrlV5yzl52Ds2MhP8TPZ4t4uGp2IYfZybFuI6ziHOzQbEhCHdLmprKSqcQmazjvOf4UCFxg5JeprjEkhO0zNJvPil6//HkvalrqQv4yznDJ6fr4gyUphMU4wiY22jJQ/k+rAQriNjkmtHuJb7iIvwMLpto5RVg4g2suSg0uzACzoiEC3dNrZmKG/Mxmd18r2OJFZAze+YJpr5cCljSDHygIv1vr8mVDOH8ndZJ8hbl3XiI0xUwnPPUHHymBwTm0qm6QWu/j+S6M2h9PKU6IKE5cszAbvJcWrDWVSMetxBjpkptYPf3NHxLB10/RJuV8fGxfrBmY9IogH4uqmuw2IChrQiiV7tC6KPIEw0j8qVzGM0HRFHEhdrwqM5KX32caawi2OaEUFOTGiiD16mwN4Nby6SaLeOIuc/GGYmfq+jJjy3jb2dAtKsLmsLjT/sriaqOmLR9WL64JauHfaenLq8poguftJ3612/g/JrjltA6ZtaG+DiwIZ9og4kyqPKxwkUT9ij5NkVUUd7lGIWxR5CSogBQ7r0weDIDwYe+fc8picn4XRLTEXfj1mUJTGPVOHLXOWrD46gE5poMHWVPE1rqOmt/B4xmeMi7FH1CRh8EdFAsFZg19q4Nl9AXahtLATDSvhPwP26i9U3Mp82mtnYRytQiJauXTLv0e17/rt3j3Kdv+bRoeCRYTQEjIj+G2iiarANC0Mm+r8wwC/dmP/mRUb4GAAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='일반회원 - [할인X펀딩쿠폰_7400원], 일반결제 -신용/체크카드 결제 &amp;gt; 주문완료 시 체결현황 확인 - TestRail' /&gt;" SearchSteps="FuzzySelector, Image" />
+                              </uix:NExtractData.NextLink>
+                              <uix:NExtractData.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="48, 390, 1550, 1100" FriendlyName="'1 Step'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;" Guid="c2f98dcb-1fb6-4bb8-9c4d-596b621dd1f0" InformativeScreenshot="0743f5db7b8b1054e1cebf35b6a88868.png" ScopeSelectorArgument="&lt;html app='chrome.exe' omit:title='일반회원 - [할인X펀딩쿠폰_7400원], 일반결제 -신용/체크카드 결제 &amp;gt; 주문완료 시 체결현황 확인 - TestRail' /&gt;" SearchSteps="Selector" />
+                              </uix:NExtractData.Target>
+                            </uix:NExtractData>
+                            <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A1" WorkbookPath="C:\Users\STA-393\Desktop\테스트레일1.xlsx" />
+                          </Sequence>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c6b12afb7bca833e328d2cf027d9e0d6.png" Selector="&lt;html app='chrome.exe' title='자동화 테스트 - TestRail'/&gt;" Url="http://172.30.2.20/index.php?/runs/view/832&amp;group_by=cases:section_id&amp;group_order=asc" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

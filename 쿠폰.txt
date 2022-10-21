@@ -1,0 +1,15 @@
+{
+
+  "AdminId": "승인자ID",
+
+  "ApprStatus": "상태값",
+
+  "CouponMasterNoList": [[
+
+    정책번호
+
+  ],
+
+  "ApproveLevel": "SECOND"
+
+}

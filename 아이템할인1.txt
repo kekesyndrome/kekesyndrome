@@ -1,0 +1,22 @@
+{
+  "ItemDiscount": {
+    "Type": "I",
+    "CostBasisNo": 0,
+    "CostBasisName": "테스트",
+    "CostUnit": "R",
+    "CostPrice": 0,
+    "CostRate": 2,
+    "Memo": "테스트 카본",
+    "WhoFee": "GD",
+    "StartDate": "2021-01-05T05:54:52.980Z",
+    "EndDate": "2022-01-04T05:54:52.980Z",
+    "ItemNo": "1100285138",
+    "PcsDisocuntYn": "N",
+    "PcsCostType": "N",
+    "ExcludeSiteId": "",
+    "RegId": "yumhan",
+    "DiscountSubType": "1",
+    "SiteType": "G",
+    "ChargeSite": "G"
+  }
+}
